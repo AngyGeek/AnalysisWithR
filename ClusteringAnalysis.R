@@ -10,7 +10,7 @@ summary(data$var)
 
 # Select outliers values
 liste<-vector("list", ncol(data))
-value.toSuppress<-vector(mode="logical", length= nrow(data))
+row.toSuppress<-vector(mode="logical", length= nrow(data))
 
 for (i in 1:ncol(data)) {
   liste[[i]]<- vector(mode = "logical", length = nrow(data));
