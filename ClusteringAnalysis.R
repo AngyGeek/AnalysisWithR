@@ -28,7 +28,7 @@ for (i in 1:length(liste)){
 # % delete necessery on each features
 rowSuppr<-vector("list", ncol(data))
 for (i in 1:length(liste)){
-  valueSuppr[i]<- 100 * sum(liste[[i]]) / length(liste[[i]]);
+  rowSuppr[i]<- 100 * sum(liste[[i]]) / length(liste[[i]]);
 }
 
 # Total data to delete
